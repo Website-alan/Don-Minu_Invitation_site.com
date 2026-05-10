@@ -169,4 +169,32 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
+
+    // 9. Play video only when visible
+    const engagementVideo = document.getElementById('engagementVideo');
+    if (engagementVideo) {
+        // Allow user to toggle mute by clicking the video
+        engagementVideo.addEventListener('click', () => {
+            engagementVideo.muted = !engagementVideo.muted;
+        });
+
+        const videoObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Try to play the video and then unmute if browser allows it
+                    engagementVideo.play().then(() => {
+                        engagementVideo.muted = false;
+                    }).catch(e => {
+                        // Fallback: play muted if audio is blocked
+                        engagementVideo.muted = true;
+                        engagementVideo.play();
+                    });
+                } else {
+                    engagementVideo.pause();
+                }
+            });
+        }, { threshold: 0.3 }); // Plays when 30% visible
+        
+        videoObserver.observe(engagementVideo);
+    }
 });

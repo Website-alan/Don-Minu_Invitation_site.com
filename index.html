@@ -83,21 +83,7 @@
         <section id="events" class="events-section bg-cream py-large">
             <div class="container">
                 <h2 class="section-title text-center">When & Where</h2>
-                <div class="timeline">
-                    <div class="event-card reveal-up" id="event1">
-                        <div class="event-icon"><img src="https://img.icons8.com/ios/50/D4AF37/diamond-ring.png" alt="Ring"></div>
-                        <div class="event-details">
-                            <h3>The Engagement</h3>
-                            <p class="event-meta">Manasammatham</p>
-                            <p class="date">May 09, 2026 • 11:00 PM</p>
-                            <p class="location">St. George Forane Church, Moolamattom</p>
-                            <div class="event-actions">
-                                <a href="https://maps.app.goo.gl/PWksTdSSVCfoZZvz7" class="btn-sm" target="_blank">Get Directions</a>
-                                <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Don+%26+Meenu%27s+Manasammatham&dates=20260509T230000/20260510T020000&details=Join+us+for+our+Engagement!&location=St.+George+Forane+Church,+Moolamattom" class="btn-sm btn-outline" target="_blank">Add to Calendar</a>
-                            </div>
-                        </div>
-                    </div>
-                    
+                <div class="timeline">                   
                     <div class="event-card reveal-up delay-1" id="event2">
                         <div class="event-icon"><img src="https://img.icons8.com/ios/50/D4AF37/church.png" alt="Church"></div>
                         <div class="event-details">
@@ -132,14 +118,24 @@
         <!-- Section 5: Gallery -->
         <section id="gallery" class="gallery-section py-large">
             <div class="container">
-                <h2 class="section-title text-center">Moments We Cherish</h2>
+                <h2 class="section-title text-center">Moments We Cherish</h2> 
+                
+                <div class="video-wrapper reveal-up" style="max-width: 100%; margin: 0 auto 4rem auto; border-radius: 15px; overflow: hidden; box-shadow: var(--shadow); aspect-ratio: 16/9; background: #000; position: relative;">
+                    <video id="engagementVideo" autoplay loop playsinline style="width: 100%; height: 100%;  border-radius: 15px; object-fit: fill; transform: rotate(-90deg);">
+                        <source src="engagement-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag
+                    </video> 
+                </div>
+ 
                 <div class="gallery-grid">
-                    <div class="gallery-item-wrap reveal-up"><div class="gallery-item" style="background-image: url('gallery1.png'); background-size: cover;"></div></div>
-                    <div class="gallery-item-wrap reveal-up delay-1"><div class="gallery-item" style="background-image: url('gallery2.png'); background-size: cover;"></div></div>
-                    <div class="gallery-item-wrap reveal-up delay-2"><div class="gallery-item" style="background-image: url('gallery3.png'); background-size: cover;"></div></div>
-                    <div class="gallery-item-wrap reveal-up"><div class="gallery-item" style="background-image: url('hero.png'); background-size: cover;"></div></div>
-                    <div class="gallery-item-wrap reveal-up delay-1"><div class="gallery-item" style="background-image: url('don.png'); background-size: cover;"></div></div>
-                    <div class="gallery-item-wrap reveal-up delay-2"><div class="gallery-item" style="background-image: url('meenu.png'); background-size: cover;"></div></div>
+                    <div class="gallery-item-wrap reveal-up"><div class="gallery-item" style="background-image: url('engagement-1.jpeg'); background-size: cover; background-position: center;"></div></div>
+                    <div class="gallery-item-wrap reveal-up delay-1"><div class="gallery-item" style="background-image: url('engagement-2.jpeg'); background-size: cover; background-position: center;"></div></div>
+                    <div class="gallery-item-wrap reveal-up delay-2"><div class="gallery-item" style="background-image: url('engagement-3.jpeg'); background-size: cover; background-position: center;"></div></div>
+                    <div class="gallery-item-wrap reveal-up"><div class="gallery-item" style="background-image: url('engagement-4.jpeg'); background-size: cover; background-position: center;"></div></div>
+                    <div class="gallery-item-wrap reveal-up delay-1"><div class="gallery-item" style="background-image: url('gallery1.png'); background-size: cover; background-position: center;"></div></div>
+                    <div class="gallery-item-wrap reveal-up delay-2"><div class="gallery-item" style="background-image: url('gallery2.png'); background-size: cover; background-position: center;"></div></div>
+                    <div class="gallery-item-wrap reveal-up"><div class="gallery-item" style="background-image: url('gallery3.png'); background-size: cover; background-position: center;"></div></div>
+                    <div class="gallery-item-wrap reveal-up delay-1"><div class="gallery-item" style="background-image: url('hero.jpeg'); background-size: cover; background-position: center;"></div></div>
                 </div>
             </div>
         </section>
